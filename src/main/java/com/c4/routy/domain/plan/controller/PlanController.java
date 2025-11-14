@@ -2,9 +2,9 @@ package com.c4.routy.domain.plan.controller;
 
 import com.c4.routy.domain.plan.dto.*;
 import com.c4.routy.domain.plan.service.PlanService;
-import com.c4.routy.domain.plan.service.PlanServiceImpl;
 import com.c4.routy.domain.user.websecurity.CustomUserDetails;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.*;
@@ -13,6 +13,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@Slf4j
 @RestController
 @RequestMapping("/plans")
 @RequiredArgsConstructor
@@ -48,7 +49,9 @@ public class PlanController {
             @RequestParam(required = false) Integer regionId,
             @RequestParam(required = false) Integer days
     ) {
-        return planService.getPublicPlans(sort, regionId, days);
+        List<BrowseResponseDTO> list = planService.getPublicPlans(sort, regionId, days);
+        log.info("{}",list);
+        return list;
     }
 
 

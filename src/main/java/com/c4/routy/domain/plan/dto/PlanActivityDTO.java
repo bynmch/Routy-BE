@@ -1,6 +1,9 @@
 package com.c4.routy.domain.plan.dto;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 
 //상세보기에서 일정(활동) 한 줄

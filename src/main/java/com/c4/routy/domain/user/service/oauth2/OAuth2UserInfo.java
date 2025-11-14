@@ -1,9 +1,5 @@
 package com.c4.routy.domain.user.service.oauth2;
 
-import org.springframework.security.oauth2.core.user.OAuth2User;
-
-import java.util.Map;
-
 // OAuth2 Provider별 사용자 정보 추출 인터페이스
 public interface OAuth2UserInfo {
 

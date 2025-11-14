@@ -6,7 +6,10 @@ import com.c4.routy.domain.place.service.KakaoSearchService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
 @RestController
@@ -123,5 +126,16 @@ public class KakaoSearchController {
 
         KakaoPlaceResponse response = kakaoSearchService.searchRestaurants(request);
         return ResponseEntity.ok(response);
+    }
+    @GetMapping("/keyword-search")
+    public ResponseEntity<?> keywordSearch(
+            @RequestParam String query,
+            @RequestParam(required = false) Double lat,
+            @RequestParam(required = false) Double lng
+    ) {
+        // 서비스에서 Kakao Local API 호출
+        return ResponseEntity.ok(
+                kakaoSearchService.searchByKeyword(query, lat, lng)
+        );
     }
 }

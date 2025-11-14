@@ -1,6 +1,6 @@
 package com.c4.routy.domain.user.dto;
 
-import lombok.*;
+import lombok.Data;
 
 @Data
 public class UserDTO {

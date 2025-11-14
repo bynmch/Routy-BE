@@ -1,6 +1,7 @@
 package com.c4.routy.domain.place.dto;
 
 import lombok.Data;
+
 import java.util.List;
 
 @Data

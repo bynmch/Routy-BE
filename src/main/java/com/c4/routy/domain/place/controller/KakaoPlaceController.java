@@ -1,9 +1,9 @@
 package com.c4.routy.domain.place.controller;
 
+import com.c4.routy.domain.place.service.KakaoAttractionService;
 import com.c4.routy.domain.place.service.KakaoCafeService;
 import com.c4.routy.domain.place.service.KakaoFoodService;
 import com.c4.routy.domain.place.service.KakaoHotelService;
-import com.c4.routy.domain.place.service.KakaoAttractionService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

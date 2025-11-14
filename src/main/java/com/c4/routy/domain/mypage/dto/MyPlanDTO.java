@@ -1,6 +1,9 @@
 package com.c4.routy.domain.mypage.dto;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 //마이페이지 내 일정
 @AllArgsConstructor

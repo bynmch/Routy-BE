@@ -22,7 +22,7 @@ public class PlanControllerIntegrationTest {
 
     @Test
     void testGetPublicPlans() throws Exception {
-        mockMvc.perform(get("/api/plans/public")
+        mockMvc.perform(get("/plans/public")
                         .param("sort", "latest"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$").isArray());
@@ -30,14 +30,14 @@ public class PlanControllerIntegrationTest {
 
     @Test
     void testGetPlanDetail() throws Exception {
-        mockMvc.perform(get("/api/plans/1"))
+        mockMvc.perform(get("/plans/1"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.planId").value(1));
     }
 
     @Test
     void testIncreaseViewCount() throws Exception {
-        mockMvc.perform(post("/api/plans/1/view"))
+        mockMvc.perform(post("/plans/1/view"))
                 .andExpect(status().isOk());
     }
 }

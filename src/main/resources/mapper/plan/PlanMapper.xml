@@ -132,7 +132,7 @@
             tr.transport_name AS transportation
         FROM tbl_plan p
                  LEFT JOIN tbl_region r ON p.region_id = r.region_id
-                 LEFT JOIN TBL_TRANSPORT tr ON p.plan_id = tr.plan_id
+                 LEFT JOIN tbl_transport tr ON p.plan_id = tr.plan_id
         WHERE p.user_id = #{userId}
           AND p.is_deleted = 0
         ORDER BY p.start_date ASC
@@ -198,6 +198,7 @@
         AND f.is_deleted = 0
         WHERE p.is_deleted = 0
         AND p.is_public = 0
+        AND DATE(p.end_date) &lt; CURRENT_DATE
         <!-- 필터링 조건 -->
         <if test="regionId != null">
             AND p.region_id = #{regionId}
@@ -280,7 +281,7 @@
             d.duration_id,
             d.day,
             DATE_ADD(p.start_date, INTERVAL (d.day - 1) DAY) AS date
-        FROM tbl_plan d
+        FROM tbl_duration d
             JOIN tbl_plan p ON d.plan_id = p.plan_id
         WHERE d.plan_id = #{planId}
         ORDER BY d.day ASC

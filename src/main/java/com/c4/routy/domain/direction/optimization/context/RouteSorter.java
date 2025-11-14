@@ -4,7 +4,6 @@ import com.c4.routy.domain.direction.dto.KakaoMobility.Location;
 import com.c4.routy.domain.direction.optimization.strategy.RouteStrategy;
 import lombok.extern.slf4j.Slf4j;
 
-import java.time.LocalDateTime;
 import java.util.List;
 
 @Slf4j

@@ -3,15 +3,12 @@ package com.c4.routy.domain.plan.controller;
 import com.c4.routy.domain.plan.dto.PlanReviewFormDTO;
 import com.c4.routy.domain.plan.dto.PlanReviewResponseDTO;
 import com.c4.routy.domain.plan.dto.PlanReviewUploadRequestDTO;
-import com.c4.routy.domain.plan.dto.ReviewFileDTO;
-import com.c4.routy.domain.plan.entity.ReviewEntity;
 import com.c4.routy.domain.plan.service.ReviewService;
 import com.c4.routy.domain.user.websecurity.CustomUserDetails;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 //리뷰 모달 컨트롤러

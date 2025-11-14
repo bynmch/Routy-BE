@@ -7,7 +7,6 @@ import com.c4.routy.domain.region.entity.RegionEntity;
 import com.c4.routy.domain.user.entity.UserEntity;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
-import jakarta.persistence.Entity;
 import jakarta.persistence.*;
 import lombok.*;
 

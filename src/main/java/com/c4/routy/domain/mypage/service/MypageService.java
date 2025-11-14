@@ -1,11 +1,9 @@
 package com.c4.routy.domain.mypage.service;
 
-import com.c4.routy.common.util.DateTimeUtil;
 import com.c4.routy.domain.mypage.dto.*;
 import com.c4.routy.domain.mypage.mapper.MypageQueryMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;

@@ -7,7 +7,6 @@ import com.amazonaws.services.s3.model.PutObjectRequest;
 import com.c4.routy.domain.plan.dto.PlanReviewFormDTO;
 import com.c4.routy.domain.plan.dto.PlanReviewResponseDTO;
 import com.c4.routy.domain.plan.dto.PlanReviewUploadRequestDTO;
-import com.c4.routy.domain.plan.dto.ReviewFileDTO;
 import com.c4.routy.domain.plan.entity.PlanEntity;
 import com.c4.routy.domain.plan.entity.ReviewEntity;
 import com.c4.routy.domain.plan.entity.ReviewFileEntity;

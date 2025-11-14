@@ -1,8 +1,8 @@
 package com.c4.routy.domain.plandraw.controller;
 
+import com.c4.routy.domain.plan.entity.PlanEntity;
 import com.c4.routy.domain.plandraw.dto.PlanCreateRequestDTO;
 import com.c4.routy.domain.plandraw.dto.PlanResponseDTO;
-import com.c4.routy.domain.plan.entity.PlanEntity;
 import com.c4.routy.domain.plandraw.service.PlanDrawService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

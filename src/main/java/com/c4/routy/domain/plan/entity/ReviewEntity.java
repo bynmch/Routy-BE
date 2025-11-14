@@ -4,7 +4,7 @@ import com.c4.routy.common.util.DateTimeUtil;
 import com.c4.routy.domain.user.entity.UserEntity;
 import jakarta.persistence.*;
 import lombok.*;
-import java.time.LocalDateTime;
+
 import java.util.ArrayList;
 import java.util.List;
 

@@ -5,7 +5,6 @@ import com.c4.routy.domain.place.dto.PlaceResponseDTO;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
-
 import java.util.List;
 
 @Mapper

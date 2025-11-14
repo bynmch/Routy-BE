@@ -2,14 +2,10 @@ package com.c4.routy.domain.plan.mapper;
 
 
 import com.c4.routy.domain.plan.dto.*;
-import com.c4.routy.domain.plan.dto.PlanDetailResponseDTO;
-import com.c4.routy.domain.plan.dto.PlanEditResponseDTO;
-import com.c4.routy.domain.plan.dto.PlanReviewFormDTO;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
-import java.util.Map;
 
 @Mapper
 public interface PlanMapper {
