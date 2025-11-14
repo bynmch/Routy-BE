@@ -46,7 +46,7 @@ public class OAuth2LoginSuccessHandler extends SimpleUrlAuthenticationSuccessHan
 
         // OAuth2 로그인 성공을 프론트엔드에 알리기 위한 쿼리 파라미터 추가
         // 프론트엔드에서 이 파라미터를 감지하고 상태를 동기화함
-        String redirectUrl = "http://routy.com/login?oauth2Login=success";
+        String redirectUrl = "http://localhost/login?oauth2Login=success";
 
         log.info("OAuth2 로그인 리다이렉트: {}", redirectUrl);
 
