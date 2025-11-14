@@ -44,7 +44,7 @@
             /* 내가 북마크한 일정 수 */
             (
                 SELECT COUNT(*)
-                FROM tnl_bookmark b
+                FROM tbl_bookmark b
                 WHERE b.user_id = u.user_no
             ) AS totalBookmarkCount
 
