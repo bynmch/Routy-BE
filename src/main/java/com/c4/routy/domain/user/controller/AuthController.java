@@ -26,7 +26,7 @@ public class AuthController {
     // health check
     @GetMapping("/health")
     public String health(){
-        return "Routy 서버 동작 중....아싸 된다. 아싸 잘된다.";
+        return "Routy 서버 동작 중....왜 안되는겨";
     }
 
     // 로그아웃
